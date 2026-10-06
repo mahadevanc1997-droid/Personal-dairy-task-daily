@@ -17,7 +17,7 @@ jobs:
       - name: Extract Android project
         run: |
           mkdir project
-          unzip -q 2026_2027_Digital_Journal_GitHub_Build_v4.zip -d project
+          unzip -q 2026_2027_Digital_Journal_Premium_v5.zip -d project
 
       - name: Fix Android project configuration
         working-directory: project

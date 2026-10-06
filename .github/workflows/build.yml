@@ -19,6 +19,12 @@ jobs:
           mkdir project
           unzip -q 2026_2027_Digital_Journal_GitHub_Build_v4.zip -d project
 
+      - name: Enable AndroidX
+        working-directory: project
+        run: |
+          echo "android.useAndroidX=true" > gradle.properties
+          echo "android.enableJetifier=true" >> gradle.properties
+
       - name: Set up Java 17
         uses: actions/setup-java@v5
         with:
